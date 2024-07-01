@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    background-color: #0b0c10;
+}
+
+.header {
+    background-color: #1f2833;
+    color: #c2c6c7;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+}
+
+.header h1 {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.logo-container {
+  margin-right: 20px;
+}
+
+.logo-container img {
+  border-radius: 50%;
+  height: 50px;
+  width: auto;
+}
+
+.text-container {
+  text-align: center;
+  color: #f2f3f5;
+}
+
+.text-container h1 {
+  font-size: 24px;
+  margin: 0;
+  font-family: 'Gg sans';
+  font-weight: 800;
+}
+
+.text-container h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.subtitle-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+
+.subtitle-icon svg {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+/*content*/
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px 10px 20px 10px;
+  padding: 20px;
+  width: 100%;
+  background-color:	#1f2833;
+  color: #c2c6c7;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.container a{
+    color: #45a29e;
+  }
+.container a:visited{
+    color: #45a29e;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.image-container img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.title {
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #888;
+}
+
+.pagination {
+  font-family: 'Gg sans';
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+/*home page*/
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin: 20px 10px 20px 10px;
+  padding: 20px;
+  border-radius: 20px;
+  justify-content: center;
+}
+.pagination-button{
+  margin: 0 10px;
+}
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+.search-button {
+  padding: 10px 20px;
+  background-color: #45a29e;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  outline: none;
+}
+.pagination-button {
+  padding: 10px 20px;
+  background-color: #45a29e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}

@@ -1,0 +1,42 @@
+{% extends "header.html.jinja" %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+{% endblock %}
+{% block content %}
+
+<script>
+function goToPage(page) {
+    var currentURL = new URL(window.location.href);
+    var currentPage = parseInt(currentURL.searchParams.get('page')) || 0;
+
+    var nextPage = currentPage + page;
+    currentURL.searchParams.set('page', nextPage);
+
+    window.location.href = currentURL.toString();
+}
+</script>
+
+{% for user in users %}
+<div class="box">
+  <div class="container">
+    <div class="image-container">
+      <img src="{{ user.avatar_url }}" alt="ava">
+      <div>
+        <h2 class="title">{{ user.username }}</h2>
+        <p class="subtitle"><a href="{{ user.permalink_url }}">ссылка</a></p>
+        <p class="subtitle">tracks: {{user.track_count}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+<div class="search-container">
+{% if page > 0%}
+        <button class="pagination-button" onclick="goToPage(-1)">пред.</button>
+{% endif %}
+{% if users|length > 0%}
+        <button class="pagination-button" onclick="goToPage(1)">след.</button>
+{% endif %}
+</div>
+{% endblock %}
